@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-pixel-heading {
+    font-family: 'Pixelify Sans', cursive, sans-serif;
+  }
+  .font-journal {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+  }
+  .font-sans-ui {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* CRT Screen Effect */
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 40;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar for Journal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 16, 38, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: #5FE1B0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F2C14E;
+}

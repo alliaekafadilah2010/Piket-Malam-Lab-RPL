@@ -1,0 +1,6 @@
+{
+  "name": "Piket Malam",
+  "description": "Game puzzle-adventure horor edukatif berlatar lab bayangan SMK RPL. Uraikan bug dan mitos coding dasar menggunakan HTML, If-Else, SQL, dan Array.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
